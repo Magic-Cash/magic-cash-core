@@ -13,8 +13,8 @@ This project follows a modular functional architecture to ensure separation of c
 * **src/components/Security/** : Functional UI logic for `GuardRoute`, `PinPad`, and `PrivacyMask`.
 * **src/constants/** : Core documentation for `UiUxGuidelines` and design tokens.
 * **src/core/** : Proprietary engines for `auth`, `security` (PIN validation), and `session` management.
-* **src/hooks/** : Specialized state logic for `useProfile` and `useStaking` (7.8% APY).
-* **src/services/** : Infrastructure bridges including `card-issuer` (VCC), `market` (CMC API), `moonpay`, and `tracker` (Raydium).
+* **src/hooks/** : Specialized state logic for `useProfile` and `useStaking` .
+* **src/services/** : Infrastructure bridges including `card-issuer` (VCC), `market` (API), `moonpay`, and `tracker` (Raydium).
 
 ---
 
@@ -37,13 +37,13 @@ The `security-layer.sql` establishes a **Zero-Trust** model using **PostgreSQL R
 
 ### **wallet**
 * Solana wallet identity management and real-time balance tracking.
-* Liquid staking logic for SOL (7.8% APY) with automated reward distribution.
-* Watchlist management for monitoring Raydium-based meme tokens.
+* Liquid staking logic for SOL with automated reward distribution.
+* Watchlist management for monitoring Raydium meme tokens.
 
 ### **payments**
 * Secure transaction intent generation and payment request flows.
 * Fiat-to-crypto conversion rules and integration logic for MoonPay.
-* Real-time market data tracking via CoinMarketCap Pro API.
+* Real-time market data tracking.
 
 ### **cards**
 * Virtual card lifecycle management: creation, freezing, and security rules.
